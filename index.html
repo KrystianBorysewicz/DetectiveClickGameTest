@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-div" onclick="hideImage()">
+        <img src="images/letterDisplay.png" id="letter-display" alt="">
+        <img src="images/letter.png" onclick="ShowLetter()" alt="" id="letter">
+        <img src="images/image.png" alt="">
+    </div>
+
+</body>
+<script>
+    function ShowLetter() {
+        var image1 = document.getElementById("letter-display");
+        image1.style.visibility = "visible";
+        event.stopPropagation();
+    }
+    function hideImage() {
+        var image1 = document.getElementById("letter-display");
+        image1.style.visibility = "hidden";
+    }
+</script>
+
+</html>
